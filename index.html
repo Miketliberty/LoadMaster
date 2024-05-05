@@ -38,7 +38,7 @@
             margin: 4px 2px;
             cursor: pointer;
             border-radius: 4px;
-         }
+        }
     </style>
 </head>
 <body>
@@ -55,14 +55,14 @@
             <td><input type="text" id="aircraftType"></td>
         </tr>
         <tr>
-        	<th>Inbound Flight number</th>
+            <th>Inbound Flight number</th>
             <td><input type="text" id="outflightnumber"></td>
         <tr>
         <tr>
-        	<th>Outbound Flight number</th>
+            <th>Outbound Flight number</th>
             <td><input type="text" id="inflightnumber"></td>
         <tr>
-        	<th>LIR Edition number</th>
+            <th>LIR Edition number</th>
             <td><input type="text" id="lirnumber"></td>
         <tr>
             <th>Date</th>
@@ -71,7 +71,7 @@
     </table>
     
     <h2>FWD Cargo Details</h2>
-    <table id="cargoTable">
+    <table id="fwdCargoTable">
         <tr>
             <th>Cargo Item</th>
             <th>Weight (kg)</th>
@@ -91,218 +91,16 @@
             <td><input type="text" class="position"></td>
             <td><input type="text" class="contents"></td>
         </tr>
-        <tr class="cargoRow">
-            <td><input type="text" class="cargoItem"></td>
-            <td><input type="number" class="cargoWeight"></td>
-            <td>
-                <select class="compartment">
-                    <option value="1">Compartment 1</option>
-                    <option value="2">Compartment 2</option>
-                </select>
-            </td>
-            <td><input type="text" class="position"></td>
-            <td><input type="text" class="contents"></td>
-        </tr>
-        <tr class="cargoRow">
-            <td><input type="text" class="cargoItem"></td>
-            <td><input type="number" class="cargoWeight"></td>
-            <td>
-                <select class="compartment">
-                    <option value="1">Compartment 1</option>
-                    <option value="2">Compartment 2</option>
-                </select>
-            </td>
-            <td><input type="text" class="position"></td>
-            <td><input type="text" class="contents"></td>
-        </tr>
-        <tr class="cargoRow">
-            <td><input type="text" class="cargoItem"></td>
-            <td><input type="number" class="cargoWeight"></td>
-            <td>
-                <select class="compartment">
-                    <option value="1">Compartment 1</option>
-                    <option value="2">Compartment 2</option>
-                </select>
-            </td>
-            <td><input type="text" class="position"></td>
-            <td><input type="text" class="contents"></td>
-        </tr>
-        <tr class="cargoRow">
-            <td><input type="text" class="cargoItem"></td>
-            <td><input type="number" class="cargoWeight"></td>
-            <td>
-                <select class="compartment">
-                    <option value="1">Compartment 1</option>
-                    <option value="2">Compartment 2</option>
-                </select>
-            </td>
-            <td><input type="text" class="position"></td>
-            <td><input type="text" class="contents"></td>
-        </tr>
-        <tr class="cargoRow">
-            <td><input type="text" class="cargoItem"></td>
-            <td><input type="number" class="cargoWeight"></td>
-            <td>
-                <select class="compartment">
-                    <option value="1">Compartment 1</option>
-                    <option value="2">Compartment 2</option>
-                </select>
-            </td>
-            <td><input type="text" class="position"></td>
-            <td><input type="text" class="contents"></td>
-        </tr>
-        <tr class="cargoRow">
-            <td><input type="text" class="cargoItem"></td>
-            <td><input type="number" class="cargoWeight"></td>
-            <td>
-                <select class="compartment">
-                    <option value="1">Compartment 1</option>
-                    <option value="2">Compartment 2</option>
-                </select>
-            </td>
-            <td><input type="text" class="position"></td>
-            <td><input type="text" class="contents"></td>
-        </tr>
-        <tr class="cargoRow">
-            <td><input type="text" class="cargoItem"></td>
-            <td><input type="number" class="cargoWeight"></td>
-            <td>
-                <select class="compartment">
-                    <option value="1">Compartment 1</option>
-                    <option value="2">Compartment 2</option>
-                </select>
-            </td>
-            <td><input type="text" class="position"></td>
-            <td><input type="text" class="contents"></td>
-        </tr>
-        <tr class="cargoRow">
-            <td><input type="text" class="cargoItem"></td>
-            <td><input type="number" class="cargoWeight"></td>
-            <td>
-                <select class="compartment">
-                    <option value="1">Compartment 1</option>
-                    <option value="2">Compartment 2</option>
-                </select>
-            </td>
-            <td><input type="text" class="position"></td>
-            <td><input type="text" class="contents"></td>
-        </tr>
-        <tr class="cargoRow">
-            <td><input type="text" class="cargoItem"></td>
-            <td><input type="number" class="cargoWeight"></td>
-            <td>
-                <select class="compartment">
-                    <option value="1">Compartment 1</option>
-                    <option value="2">Compartment 2</option>
-                </select>
-            </td>
-            <td><input type="text" class="position"></td>
-            <td><input type="text" class="contents"></td>
-        </tr>
-        <tr class="cargoRow">
-            <td><input type="text" class="cargoItem"></td>
-            <td><input type="number" class="cargoWeight"></td>
-            <td>
-                <select class="compartment">
-                    <option value="1">Compartment 1</option>
-                    <option value="2">Compartment 2</option>
-                </select>
-            </td>
-            <td><input type="text" class="position"></td>
-            <td><input type="text" class="contents"></td>
-        </tr>
-        <tr class="cargoRow">
-            <td><input type="text" class="cargoItem"></td>
-            <td><input type="number" class="cargoWeight"></td>
-            <td>
-                <select class="compartment">
-                    <option value="1">Compartment 1</option>
-                    <option value="2">Compartment 2</option>
-                </select>
-            </td>
-            <td><input type="text" class="position"></td>
-            <td><input type="text" class="contents"></td>
-        </tr>
-        <tr class="cargoRow">
-            <td><input type="text" class="cargoItem"></td>
-            <td><input type="number" class="cargoWeight"></td>
-            <td>
-                <select class="compartment">
-                    <option value="1">Compartment 1</option>
-                    <option value="2">Compartment 2</option>
-                </select>
-            </td>
-            <td><input type="text" class="position"></td>
-            <td><input type="text" class="contents"></td>
-        </tr>
-        <tr class="cargoRow">
-            <td><input type="text" class="cargoItem"></td>
-            <td><input type="number" class="cargoWeight"></td>
-            <td>
-                <select class="compartment">
-                    <option value="1">Compartment 1</option>
-                    <option value="2">Compartment 2</option>
-                </select>
-            </td>
-            <td><input type="text" class="position"></td>
-            <td><input type="text" class="contents"></td>
-        </tr>
-        <tr class="cargoRow">
-            <td><input type="text" class="cargoItem"></td>
-            <td><input type="number" class="cargoWeight"></td>
-            <td>
-                <select class="compartment">
-                    <option value="1">Compartment 1</option>
-                    <option value="2">Compartment 2</option>
-                </select>
-            </td>
-            <td><input type="text" class="position"></td>
-            <td><input type="text" class="contents"></td>
-        </tr>
-        <!-- Add more cargo items as needed -->
+        <!-- Cargo rows for FWD compartment -->
     </table>
     
-    <p class="error" id="weightError"></p>
+    <p class="error" id="fwdWeightError"></p>
     
     <h2>Total FWD Weight Calculation</h2>
-    <p>Total Cargo Weight: <span id="totalCargoWeight">0</span> kg</p>
-    
-    <script>
-        // JavaScript for calculating total cargo weight and validating weight restriction
-        const cargoRows = document.querySelectorAll('.cargoRow');
-        const totalCargoWeightElement = document.getElementById('totalCargoWeight');
-        const weightErrorElement = document.getElementById('weightError');
-        
-        function calculateTotalCargoWeight() {
-            let totalCargoWeight = 0;
-            cargoRows.forEach(row => {
-                const weightInput = row.querySelector('.cargoWeight');
-                totalCargoWeight += parseFloat(weightInput.value) || 0;
-            });
-            totalCargoWeightElement.textContent = totalCargoWeight.toFixed(2);
-            return totalCargoWeight;
-        }
-        
-        function validateWeightRestriction() {
-            const totalCargoWeight = calculateTotalCargoWeight();
-            if (totalCargoWeight > 21975) {
-                weightErrorElement.textContent = 'Total weight exceeds 21975 kg';
-            } else {
-                weightErrorElement.textContent = 'Load within CG limits';
-            }
-        }
-        }
-        
-        cargoRows.forEach(row => {
-            const weightInput = row.querySelector('.cargoWeight');
-            weightInput.addEventListener('input', () => {
-                validateWeightRestriction();
-            });
-        });
-    </script>
+    <p>Total Cargo Weight: <span id="fwdTotalCargoWeight">0</span> kg</p>
     
     <h2>AFT Cargo Details</h2>
-    <table id="cargoTable">
+    <table id="aftCargoTable">
         <tr>
             <th>Cargo Item</th>
             <th>Weight (kg)</th>
@@ -323,216 +121,32 @@
             <td><input type="text" class="position"></td>
             <td><input type="text" class="contents"></td>
         </tr>
-        <tr class="cargoRow">
-            <td><input type="text" class="cargoItem"></td>
-            <td><input type="number" class="cargoWeight"></td>
-            <td>
-                <select class="compartment">
-                    <option value="1">Compartment 3</option>
-                    <option value="2">Compartment 4</option>
-                    <option value="3">Compartment 5</option>
-                </select>
-            </td>
-            <td><input type="text" class="position"></td>
-            <td><input type="text" class="contents"></td>
-        </tr>
-        <tr class="cargoRow">
-            <td><input type="text" class="cargoItem"></td>
-            <td><input type="number" class="cargoWeight"></td>
-            <td>
-                <select class="compartment">
-                    <option value="1">Compartment 3</option>
-                    <option value="2">Compartment 4</option>
-                    <option value="3">Compartment 5</option>
-                </select>
-            </td>
-            <td><input type="text" class="position"></td>
-            <td><input type="text" class="contents"></td>
-        </tr>
-        <tr class="cargoRow">
-            <td><input type="text" class="cargoItem"></td>
-            <td><input type="number" class="cargoWeight"></td>
-            <td>
-                <select class="compartment">
-                    <option value="1">Compartment 3</option>
-                    <option value="2">Compartment 4</option>
-                    <option value="3">Compartment 5</option>
-                </select>
-            </td>
-            <td><input type="text" class="position"></td>
-            <td><input type="text" class="contents"></td>
-        </tr>
-        <tr class="cargoRow">
-            <td><input type="text" class="cargoItem"></td>
-            <td><input type="number" class="cargoWeight"></td>
-            <td>
-                <select class="compartment">
-                    <option value="1">Compartment 3</option>
-                    <option value="2">Compartment 4</option>
-                    <option value="3">Compartment 5</option>
-                </select>
-            </td>
-            <td><input type="text" class="position"></td>
-            <td><input type="text" class="contents"></td>
-        </tr>
-        <tr class="cargoRow">
-            <td><input type="text" class="cargoItem"></td>
-            <td><input type="number" class="cargoWeight"></td>
-            <td>
-                <select class="compartment">
-                    <option value="1">Compartment 3</option>
-                    <option value="2">Compartment 4</option>
-                    <option value="3">Compartment 5</option>
-                </select>
-            </td>
-            <td><input type="text" class="position"></td>
-            <td><input type="text" class="contents"></td>
-        </tr>
-        <tr class="cargoRow">
-            <td><input type="text" class="cargoItem"></td>
-            <td><input type="number" class="cargoWeight"></td>
-            <td>
-                <select class="compartment">
-                    <option value="1">Compartment 3</option>
-                    <option value="2">Compartment 4</option>
-                    <option value="3">Compartment 5</option>
-                </select>
-            </td>
-            <td><input type="text" class="position"></td>
-            <td><input type="text" class="contents"></td>
-        </tr>
-        <tr class="cargoRow">
-            <td><input type="text" class="cargoItem"></td>
-            <td><input type="number" class="cargoWeight"></td>
-            <td>
-                <select class="compartment">
-                    <option value="1">Compartment 3</option>
-                    <option value="2">Compartment 4</option>
-                    <option value="3">Compartment 5</option>
-                </select>
-            </td>
-            <td><input type="text" class="position"></td>
-            <td><input type="text" class="contents"></td>
-        </tr>
-        <tr class="cargoRow">
-            <td><input type="text" class="cargoItem"></td>
-            <td><input type="number" class="cargoWeight"></td>
-            <td>
-                <select class="compartment">
-                    <option value="1">Compartment 3</option>
-                    <option value="2">Compartment 4</option>
-                    <option value="3">Compartment 5</option>
-                </select>
-            </td>
-            <td><input type="text" class="position"></td>
-            <td><input type="text" class="contents"></td>
-        </tr>
-        <tr class="cargoRow">
-            <td><input type="text" class="cargoItem"></td>
-            <td><input type="number" class="cargoWeight"></td>
-            <td>
-                <select class="compartment">
-                    <option value="1">Compartment 3</option>
-                    <option value="2">Compartment 4</option>
-                    <option value="3">Compartment 5</option>
-                </select>
-            </td>
-            <td><input type="text" class="position"></td>
-            <td><input type="text" class="contents"></td>
-        </tr>
-        <tr class="cargoRow">
-            <td><input type="text" class="cargoItem"></td>
-            <td><input type="number" class="cargoWeight"></td>
-            <td>
-                <select class="compartment">
-                    <option value="1">Compartment 3</option>
-                    <option value="2">Compartment 4</option>
-                    <option value="3">Compartment 5</option>
-                </select>
-            </td>
-            <td><input type="text" class="position"></td>
-            <td><input type="text" class="contents"></td>
-        </tr>
-        <tr class="cargoRow">
-            <td><input type="text" class="cargoItem"></td>
-            <td><input type="number" class="cargoWeight"></td>
-            <td>
-                <select class="compartment">
-                    <option value="1">Compartment 3</option>
-                    <option value="2">Compartment 4</option>
-                    <option value="3">Compartment 5</option>
-                </select>
-            </td>
-            <td><input type="text" class="position"></td>
-            <td><input type="text" class="contents"></td>
-        </tr>
-        <tr class="cargoRow">
-            <td><input type="text" class="cargoItem"></td>
-            <td><input type="number" class="cargoWeight"></td>
-            <td>
-                <select class="compartment">
-                    <option value="1">Compartment 3</option>
-                    <option value="2">Compartment 4</option>
-                    <option value="3">Compartment 5</option>
-                </select>
-            </td>
-            <td><input type="text" class="position"></td>
-            <td><input type="text" class="contents"></td>
-        </tr>
-        <tr class="cargoRow">
-            <td><input type="text" class="cargoItem"></td>
-            <td><input type="number" class="cargoWeight"></td>
-            <td>
-                <select class="compartment">
-                    <option value="1">Compartment 3</option>
-                    <option value="2">Compartment 4</option>
-                    <option value="3">Compartment 5</option>
-                </select>
-            </td>
-            <td><input type="text" class="position"></td>
-            <td><input type="text" class="contents"></td>
-        </tr>
-        <tr class="cargoRow">
-            <td><input type="text" class="cargoItem"></td>
-            <td><input type="number" class="cargoWeight"></td>
-            <td>
-                <select class="compartment">
-                    <option value="1">Compartment 3</option>
-                    <option value="2">Compartment 4</option>
-                    <option value="3">Compartment 5</option>
-                </select>
-            </td>
-            <td><input type="text" class="position"></td>
-            <td><input type="text" class="contents"></td>
-        </tr>
-        <!-- Add more cargo items as needed -->
+        <!-- Cargo rows for AFT compartment -->
     </table>
     
-    <p class="error" id="weightError"></p>
+    <p class="error" id="aftWeightError"></p>
     
     <h2>Total AFT Weight Calculation</h2>
-    <p>Total Cargo Weight: <span id="totalCargoWeight">0</span> kg</p>
+    <p>Total Cargo Weight: <span id="aftTotalCargoWeight">0</span> kg</p>
     
     <button class="save-button" onclick="savePage()">Save Copy of Page</button>
     
     <script>
         // JavaScript for calculating total cargo weight and validating weight restriction
-        const cargoRows = document.querySelectorAll('.cargoRow');
-        const totalCargoWeightElement = document.getElementById('totalCargoWeight');
-        const weightErrorElement = document.getElementById('weightError');
+        const fwdCargoRows = document.querySelectorAll('#fwdCargoTable .cargoRow');
+        const aftCargoRows = document.querySelectorAll('#aftCargoTable .cargoRow');
+        const fwdTotalCargoWeightElement = document.getElementById('fwdTotalCargoWeight');
+        const aftTotalCargoWeightElement = document.getElementById('aftTotalCargoWeight');
+        const fwdWeightErrorElement = document.getElementById('fwdWeightError');
+        const aftWeightErrorElement = document.getElementById('aftWeightError');
         
-        function calculateTotalCargoWeight() {
+        function calculateTotalCargoWeight(cargoRows, totalCargoWeightElement, weightErrorElement) {
             let totalCargoWeight = 0;
             cargoRows.forEach(row => {
                 const weightInput = row.querySelector('.cargoWeight');
                 totalCargoWeight += parseFloat(weightInput.value) || 0;
             });
             totalCargoWeightElement.textContent = totalCargoWeight.toFixed(2);
-            return totalCargoWeight;
-        }
-        
-        function validateWeightRestriction() {
-            const totalCargoWeight = calculateTotalCargoWeight();
             if (totalCargoWeight > 21975) {
                 weightErrorElement.textContent = 'Total weight exceeds 21975 kg';
             } else {
@@ -544,10 +158,17 @@
             window.print();
         }
         
-        cargoRows.forEach(row => {
+        fwdCargoRows.forEach(row => {
             const weightInput = row.querySelector('.cargoWeight');
             weightInput.addEventListener('input', () => {
-                validateWeightRestriction();
+                calculateTotalCargoWeight(fwdCargoRows, fwdTotalCargoWeightElement, fwdWeightErrorElement);
+            });
+        });
+        
+        aftCargoRows.forEach(row => {
+            const weightInput = row.querySelector('.cargoWeight');
+            weightInput.addEventListener('input', () => {
+                calculateTotalCargoWeight(aftCargoRows, aftTotalCargoWeightElement, aftWeightErrorElement);
             });
         });
     </script>
