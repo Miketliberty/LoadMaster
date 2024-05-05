@@ -70,7 +70,7 @@
         </tr>
     </table>
     
-    <h2>Cargo Details</h2>
+    <h2>FWD Cargo Details</h2>
     <table id="cargoTable">
         <tr>
             <th>Cargo Item</th>
@@ -309,11 +309,9 @@
     
     <p class="error" id="weightError"></p>
     
-    <h2>Total Weight Calculation</h2>
+    <h2>Total FWD Weight Calculation</h2>
     <p>Total Cargo Weight: <span id="totalCargoWeight">0</span> kg</p>
     
-    <button class="save-button" onclick="savePage()">Save Copy of Page</button>
-    <script>
         // JavaScript for calculating total cargo weight and validating weight restriction
         const cargoRows = document.querySelectorAll('.cargoRow');
         const totalCargoWeightElement = document.getElementById('totalCargoWeight');
@@ -337,9 +335,6 @@
                 weightErrorElement.textContent = 'Load within CG limits';
             }
         }
-        
-        function savePage() {
-            window.print();
         }
         
         cargoRows.forEach(row => {
@@ -349,7 +344,8 @@
             });
         });
     </script>
-    <h2>Cargo Details</h2>
+    
+    <h2>AFT Cargo Details</h2>
     <table id="cargoTable">
         <tr>
             <th>Cargo Item</th>
@@ -588,7 +584,7 @@
     
     <p class="error" id="weightError"></p>
     
-    <h2>Total Weight Calculation</h2>
+    <h2>Total AFT Weight Calculation</h2>
     <p>Total Cargo Weight: <span id="totalCargoWeight">0</span> kg</p>
     
     <button class="save-button" onclick="savePage()">Save Copy of Page</button>
