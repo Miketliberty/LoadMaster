@@ -1,1 +1,78 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airplane Loadsheet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Airplane Loadsheet</h1>
+    
+    <h2>Aircraft Information</h2>
+    <table>
+        <tr>
+            <th>Aircraft Registration</th>
+            <td><input type="text" id="registration"></td>
+        </tr>
+        <tr>
+            <th>Aircraft Type</th>
+            <td><input type="text" id="aircraftType"></td>
+        </tr>
+        <tr>
+            <th>Date</th>
+            <td><input type="date" id="date"></td>
+        </tr>
+    </table>
+    
+    <h2>Cargo Details</h2>
+    <table>
+        <tr>
+            <th>Cargo Item</th>
+            <th>Weight (kg)</th>
+        </tr>
+        <tr>
+            <td><input type="text" id="cargoItem1"></td>
+            <td><input type="number" id="cargoWeight1"></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="cargoItem2"></td>
+            <td><input type="number" id="cargoWeight2"></td>
+        </tr>
+        <!-- Add more cargo items as needed -->
+    </table>
+    
+    <h2>Total Weight Calculation</h2>
+    <p>Total Cargo Weight: <span id="totalCargoWeight">0</span> kg</p>
+    <!-- You can add more calculations here, like fuel weight, passenger weight, etc. -->
+    
+    <script>
+        // JavaScript for calculating total cargo weight
+        const cargoWeights = document.querySelectorAll('input[id^="cargoWeight"]');
+        let totalCargoWeight = 0;
+        cargoWeights.forEach(input => {
+            input.addEventListener('input', () => {
+                totalCargoWeight = Array.from(cargoWeights).reduce((acc, input) => acc + parseFloat(input.value) || 0, 0);
+                document.getElementById('totalCargoWeight').textContent = totalCargoWeight.toFixed(2);
+            });
+        });
+    </script>
+</body>
+</html>
