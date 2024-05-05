@@ -26,6 +26,19 @@
             color: red;
             font-weight: bold;
         }
+        .save-button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+         }
     </style>
 </head>
 <body>
@@ -186,6 +199,7 @@
     <h2>Total Weight Calculation</h2>
     <p>Total Cargo Weight: <span id="totalCargoWeight">0</span> kg</p>
     
+    <button class="save-button" onclick="savePage()">Save Copy of Page</button>
     <script>
         // JavaScript for calculating total cargo weight and validating weight restriction
         const cargoRows = document.querySelectorAll('.cargoRow');
@@ -207,8 +221,12 @@
             if (totalCargoWeight > 21975) {
                 weightErrorElement.textContent = 'Total weight exceeds 21975 kg';
             } else {
-                weightErrorElement.textContent = '';
+                weightErrorElement.textContent = 'Load within CG limits';
             }
+        }
+        
+        function savePage() {
+            window.print();
         }
         
         cargoRows.forEach(row => {
