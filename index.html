@@ -334,19 +334,6 @@
             <td><input type="text" class="position"></td>
             <td><input type="text" class="contents"></td>
         </tr>
-        <tr class="cargoRow">
-            <td><input type="text" class="cargoItem"></td>
-            <td><input type="number" class="cargoWeight"></td>
-            <td>
-                <select class="compartment">
-                    <option value="1">Compartment 3</option>
-                    <option value="2">Compartment 4</option>
-                    <option value="3">Compartment 5</option>
-                </select>
-            </td>
-            <td><input type="text" class="position"></td>
-            <td><input type="text" class="contents"></td>
-        </tr>
         <!-- Cargo rows for AFT compartment -->
     </table>
     
@@ -366,15 +353,15 @@
         const fwdWeightErrorElement = document.getElementById('fwdWeightError');
         const aftWeightErrorElement = document.getElementById('aftWeightError');
         
-        function calculateTotalCargoWeight(cargoRows, totalCargoWeightElement, weightErrorElement) {
+        function calculateTotalCargoWeight(cargoRows, totalCargoWeightElement, weightErrorElement, weightLimit) {
             let totalCargoWeight = 0;
             cargoRows.forEach(row => {
                 const weightInput = row.querySelector('.cargoWeight');
                 totalCargoWeight += parseFloat(weightInput.value) || 0;
             });
             totalCargoWeightElement.textContent = totalCargoWeight.toFixed(2);
-            if (totalCargoWeight > 21975) {
-                weightErrorElement.textContent = 'Total weight exceeds 21975 kg';
+            if (totalCargoWeight > weightLimit) {
+                weightErrorElement.textContent = `Total weight exceeds ${weightLimit} kg`;
             } else {
                 weightErrorElement.textContent = 'Load within CG limits';
             }
@@ -387,14 +374,14 @@
         fwdCargoRows.forEach(row => {
             const weightInput = row.querySelector('.cargoWeight');
             weightInput.addEventListener('input', () => {
-                calculateTotalCargoWeight(fwdCargoRows, fwdTotalCargoWeightElement, fwdWeightErrorElement);
+                calculateTotalCargoWeight(fwdCargoRows, fwdTotalCargoWeightElement, fwdWeightErrorElement, 22861);
             });
         });
         
         aftCargoRows.forEach(row => {
             const weightInput = row.querySelector('.cargoWeight');
             weightInput.addEventListener('input', () => {
-                calculateTotalCargoWeight(aftCargoRows, aftTotalCargoWeightElement, aftWeightErrorElement);
+                calculateTotalCargoWeight(aftCargoRows, aftTotalCargoWeightElement, aftWeightErrorElement, 21975);
             });
         });
     </script>
