@@ -8,6 +8,7 @@
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
+            background-color: #A6AEDE;
         }
         table {
             width: 100%;
@@ -28,7 +29,7 @@
     </style>
 </head>
 <body>
-    <h1>Airplane Loadsheet</h1>
+    <h1>Load Master</h1>
     
     <h2>Aircraft Information</h2>
     <table>
@@ -41,6 +42,16 @@
             <td><input type="text" id="aircraftType"></td>
         </tr>
         <tr>
+        	<th>Inbound Flight number</th>
+            <td><input type="text" id="outflightnumber"></td>
+        <tr>
+        <tr>
+        	<th>Outbound Flight number</th>
+            <td><input type="text" id="inflightnumber"></td>
+        <tr>
+        	<th>LIR Edition number</th>
+            <td><input type="text" id="lirnumber"></td>
+        <tr>
             <th>Date</th>
             <td><input type="date" id="date"></td>
         </tr>
@@ -52,6 +63,8 @@
             <th>Cargo Item</th>
             <th>Weight (kg)</th>
             <th>Compartment</th>
+            <th>Position</th>
+            <th>Contents</th>
         </tr>
         <tr class="cargoRow">
             <td><input type="text" class="cargoItem"></td>
@@ -64,6 +77,106 @@
                     <option value="4">Compartment 4</option>
                 </select>
             </td>
+            <td><input type="text" class="position"></td>
+            <td><input type="text" class="contents"></td>
+        </tr>
+        <tr class="cargoRow">
+            <td><input type="text" class="cargoItem"></td>
+            <td><input type="number" class="cargoWeight"></td>
+            <td>
+                <select class="compartment">
+                    <option value="1">Compartment 1</option>
+                    <option value="2">Compartment 2</option>
+                    <option value="3">Compartment 3</option>
+                    <option value="4">Compartment 4</option>
+                </select>
+            </td>
+            <td><input type="text" class="position"></td>
+            <td><input type="text" class="contents"></td>
+        </tr>
+        <tr class="cargoRow">
+            <td><input type="text" class="cargoItem"></td>
+            <td><input type="number" class="cargoWeight"></td>
+            <td>
+                <select class="compartment">
+                    <option value="1">Compartment 1</option>
+                    <option value="2">Compartment 2</option>
+                    <option value="3">Compartment 3</option>
+                    <option value="4">Compartment 4</option>
+                </select>
+            </td>
+            <td><input type="text" class="position"></td>
+            <td><input type="text" class="contents"></td>
+        </tr>
+        <tr class="cargoRow">
+            <td><input type="text" class="cargoItem"></td>
+            <td><input type="number" class="cargoWeight"></td>
+            <td>
+                <select class="compartment">
+                    <option value="1">Compartment 1</option>
+                    <option value="2">Compartment 2</option>
+                    <option value="3">Compartment 3</option>
+                    <option value="4">Compartment 4</option>
+                </select>
+            </td>
+            <td><input type="text" class="position"></td>
+            <td><input type="text" class="contents"></td>
+        </tr>
+        <tr class="cargoRow">
+            <td><input type="text" class="cargoItem"></td>
+            <td><input type="number" class="cargoWeight"></td>
+            <td>
+                <select class="compartment">
+                    <option value="1">Compartment 1</option>
+                    <option value="2">Compartment 2</option>
+                    <option value="3">Compartment 3</option>
+                    <option value="4">Compartment 4</option>
+                </select>
+            </td>
+            <td><input type="text" class="position"></td>
+            <td><input type="text" class="contents"></td>
+        </tr>
+        <tr class="cargoRow">
+            <td><input type="text" class="cargoItem"></td>
+            <td><input type="number" class="cargoWeight"></td>
+            <td>
+                <select class="compartment">
+                    <option value="1">Compartment 1</option>
+                    <option value="2">Compartment 2</option>
+                    <option value="3">Compartment 3</option>
+                    <option value="4">Compartment 4</option>
+                </select>
+            </td>
+            <td><input type="text" class="position"></td>
+            <td><input type="text" class="contents"></td>
+        </tr>
+        <tr class="cargoRow">
+            <td><input type="text" class="cargoItem"></td>
+            <td><input type="number" class="cargoWeight"></td>
+            <td>
+                <select class="compartment">
+                    <option value="1">Compartment 1</option>
+                    <option value="2">Compartment 2</option>
+                    <option value="3">Compartment 3</option>
+                    <option value="4">Compartment 4</option>
+                </select>
+            </td>
+            <td><input type="text" class="position"></td>
+            <td><input type="text" class="contents"></td>
+        </tr>
+        <tr class="cargoRow">
+            <td><input type="text" class="cargoItem"></td>
+            <td><input type="number" class="cargoWeight"></td>
+            <td>
+                <select class="compartment">
+                    <option value="1">Compartment 1</option>
+                    <option value="2">Compartment 2</option>
+                    <option value="3">Compartment 3</option>
+                    <option value="4">Compartment 4</option>
+                </select>
+            </td>
+            <td><input type="text" class="position"></td>
+            <td><input type="text" class="contents"></td>
         </tr>
         <!-- Add more cargo items as needed -->
     </table>
